@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maximum Number In Array</title>
+  </head>
+  <body>
+    <script>
+      /*-----------------REDUCE METHOD------------------------------------------------
+
+      const arr = [1, 25, 35, 4, 5];
+      const newArr = arr.reduce((accm, elm) => {
+        return accm > elm ? accm : elm;
+      });
+      console.log(newArr); */
+
+      
+      /*---------------- MATH OBJECT WITH SPREAD OPERATOR--------------------------
+      
+      
+      const arr=[1,2,3,4,5]
+      const newArr=Math.max(...arr)
+      console.log(newArr); */
+
+      
+      /*------------------MATH OBJECT WITH APPLY METHOD----------------------------
+
+      
+      function test(arr){
+        newArr=Math.max.apply('',arr)
+        return newArr
+      }
+
+      console.log(test([1,2,3,4,5])); */
+
+      
+      /*-----------------------------FOR LOOP---------------------------------------
+
+      
+      function test(arr){
+        let i,max=0,len=arr.length
+        for(i=0;i<len;i++){
+            if(arr[i]>max){
+                max=arr[i]
+            }
+        }
+        return max
+      }
+      console.log(test([1,2,3,4,5])); */
+
+      
+      /*-------------------------------FOR EACH METHOD-------------------------------
+
+      function test(arr) {
+        let max = 0;
+        arr.forEach((val) => {
+          if (val > max) {
+            max = val;
+          }
+        });
+        return max;
+      }
+      console.log(test([11, 22, 50, 74, 70])); */
+    </script>
+  </body>
+</html>
