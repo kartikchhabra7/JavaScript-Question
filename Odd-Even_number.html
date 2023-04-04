@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odd-Even Number In Array</title>
+  </head>
+  <body>
+    <script>
+      /*---------------------check one number----------------------------*/
+
+      function test(n) {
+        if (n % 2 != 0) {
+          return "odd";
+        } else {
+          return "even";
+        }
+      }
+      console.log(test(5));
+
+      /*-------------------Print odd number in Array with Filter Method----*/
+
+      
+      const arr = [1, 2, 3, 4, 5];
+      const newArr = arr.filter((val) => {
+        return val % 2 != 0;                 //Even Number : return val%2==0
+      });
+      console.log(newArr);
+
+      
+      /*-----------------Print odd number with for loop--------------------*/
+      function demo(n) {
+        let i;
+        for (i = 1; i <= n; i++) {
+          if (i % 2 != 0)                     //Even Number : if(i%2==0)
+          {     
+            console.log(i);
+          }
+        }
+      }
+      demo(10);
+    </script>
+  </body>
+</html>
