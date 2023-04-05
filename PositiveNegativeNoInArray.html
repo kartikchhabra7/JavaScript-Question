@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positive & Negative Number In Array</title>
+  </head>
+  <body>
+
+              
+    
+    <script>
+
+        test=function(arr){
+          let i,len=arr.length;
+          let PosCount=0;
+          let NegCount=0;
+
+          for(i=0;i<len;i++){
+            if(arr[i]>0){
+              PosCount++
+              console.log('Positive No. are',arr[i]);
+            }
+            else{
+              NegCount++
+              console.log('Negative No. are',arr[i]);
+            }
+          }
+          console.log('PosCount is '+PosCount);
+          console.log('NegCount is '+NegCount);
+        }
+        test([1,2,3,4,5,-1,-2,-3])
+    </script>
+  </body>
+</html>
