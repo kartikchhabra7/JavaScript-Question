@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maximum Occurence / Count Duplicate Words /</title>
+  </head>
+  <body>
+              INPUT:   ['react','node','express','react','node']
+              OUTPUT:  [react: 2, node: 2, express: 1]
+    <script>
+
+        const arr=['react','node','express','react','node']
+        const count=[]
+        arr.forEach((val)=>{
+          if(count[val]){
+            count[val]++
+          }
+          else{
+            count[val]=1
+          }
+          return count
+        })
+
+        console.log(count);
+
+    </script>
+  </body>
+</html>
