@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort An Array</title>
+  </head>
+  <body>
+              INPUT: [7, 5, 12, 4, 2, 10]
+              OUTPUT:[2, 4, 5, 7, 10, 12]
+
+    <script>
+
+      /*-----------------SORT METHOD-----------------------------*/
+
+      let Arr = [7,5,12,4,2,10]
+
+      const test = (array) => {
+        let newArr = array.sort((a, b) => {
+          return a-b
+        });
+        return newArr;
+      };
+
+      let result = test(Arr);
+      console.log(result);
+
+
+
+      /*-----------------FOR LOOP-----------------------------*/
+      
+      const demo=(arr)=>{
+        let i,j,temp,len=arr.length
+
+        for(i=1;i<len;i++){
+          for(j=0;j<i;j++){
+            if(arr[i]<arr[j]){
+              temp=arr[i]
+              arr[i]=arr[j]
+              arr[j]=temp
+            }
+          }
+        }
+        return arr
+      }
+      console.log(demo([7,5,12,4,2,10])); 
+    </script>
+  </body>
+</html>
