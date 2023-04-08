@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort An Array Of Object</title>
+  </head>
+  <body>
+    <script>
+      let Arr = [
+        {
+          name: "express",
+          id: 1,
+        },
+        {
+          name: "react",
+          id: 4,
+        },
+        {
+          name: "noSql",
+          id: 3,
+        },
+        {
+          name: "mongo",
+          id: 2,
+        },
+        {
+          name:'sql',
+          id:5
+        }
+      ];
+
+      const test = (array) => {
+        let newArr = array.sort((a, b) => {
+          if (a.id < b.id) {
+            return -1;
+          }
+        });
+        return newArr;
+      };
+
+      let result = test(Arr);
+      console.log(result);
+    </script>
+  </body>
+</html>
